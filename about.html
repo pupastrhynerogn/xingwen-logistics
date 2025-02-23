@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們 - 深圳醒文國際貨運代理有限公司</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 導航欄（從 index.html 複製） -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background: rgba(26, 43, 95, 0.9); backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="醒文物流" class="logo" style="width: 220px; filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter: brightness(10);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white fw-bold px-4 py-2" href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold px-4 py-2" href="services.html">服務</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold px-4 py-2" href="about.html">關於我們</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold px-4 py-2" href="contact.html">聯繫我們</a></li>
+                </ul>
+                <!-- 語言切換 -->
+                <select class="lang-switch form-select ms-3" onchange="switchLang(this.value)" style="background: rgba(52, 152, 219, 0.9); color: white; border: none; border-radius: 8px; padding: 8px 16px; font-weight: 600; backdrop-filter: blur(5px);">
+                    <option value="zh-CN">简体中文</option>
+                    <option value="zh-TW">繁體中文</option>
+                    <option value="ko">한국어</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 橫幅 -->
+    <header class="hero position-relative text-center text-white">
+        <img src="images/banner.jpg" alt="關於我們橫幅" class="banner w-100" style="height: 500px; object-fit: cover; filter: brightness(70%);">
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <h1 class="display-3 fw-bold animate__animated animate__fadeInDown" data-lang="zh-CN">關於我們</h1>
+            <h1 class="display-3 fw-bold animate__animated animate__fadeInDown" data-lang="zh-TW">關於我們</h1>
+            <h1 class="display-3 fw-bold animate__animated animate__fadeInDown" data-lang="ko">회사 소개</h1>
+            <h1 class="display-3 fw-bold animate__animated animate__fadeInDown" data-lang="en">About Us</h1>
+        </div>
+    </header>
+
+    <!-- 主要內容 -->
+    <section class="container py-5">
+        <div class="row g-4 animate__animated animate__fadeInUp">
+            <div class="col-md-6">
+                <h2 data-lang="zh-CN">公司背景</h2>
+                <h2 data-lang="zh-TW">公司背景</h2>
+                <h2 data-lang="ko">회사 배경</h2>
+                <h2 data-lang="en">Company Background</h2>
+                <p data-lang="zh-CN">深圳醒文國際貨運代理有限公司成立於深圳，專注於國際物流服務，特別是韓國市場。我們以技術驅動和客戶至上的理念，重新定義物流行業。</p>
+                <p data-lang="zh-TW">深圳醒文國際貨運代理有限公司成立於深圳，專注於國際物流服務，特別是韓國市場。我們以技術驅動和客戶至上的理念，重新定義物流行業。</p>
+                <p data-lang="ko">심천 싱원 국제 물류 대리 유한회사는 심천에 설립되었으며, 국제 물류 서비스, 특히 한국 시장에 주력하고 있습니다. 우리는 기술 주도와 고객 중심의 이념으로 물류 산업을 재정의합니다.</p>
+                <p data-lang="en">Shenzhen Xingwen International Freight Co., Ltd. was established in Shenzhen, focusing on international logistics services, especially the Korean market. We redefine the logistics industry with technology-driven and customer-first principles.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/team.jpg" alt="團隊" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="bg-dark text-white py-5" style="background: linear-gradient(135deg, #1a2b5f, #2c3e50);">
+        <div class="container text-center">
+            <p class="mb-3" data-lang="zh-CN" style="font-size: 1.1rem;">© 2025 深圳醒文國際貨運代理有限公司 | <a href="mailto:info@szxingwen.com" class="text-white text-decoration-none">info@szxingwen.com</a></p>
+            <p class="mb-3" data-lang="zh-TW" style="font-size: 1.1rem;">© 2025 深圳醒文國際貨運代理有限公司 | <a href="mailto:info@szxingwen.com" class="text-white text-decoration-none">info@szxingwen.com</a></p>
+            <p class="mb-3" data-lang="ko" style="font-size: 1.1rem;">© 2025 심천 싱원 국제 물류 대리 유한회사 | <a href="mailto:info@szxingwen.com" class="text-white text-decoration-none">info@szxingwen.com</a></p>
+            <p class="mb-3" data-lang="en" style="font-size: 1.1rem;">© 2025 Shenzhen Xingwen International Freight Co., Ltd. | <a href="mailto:info@szxingwen.com" class="text-white text-decoration-none">info@szxingwen.com</a></p>
+            <div class="social-links mt-3">
+                <a href="#" class="text-white mx-3" style="font-size: 1.5rem; transition: color 0.3s;"><i class="fab fa-weixin"></i></a>
+                <a href="#" class="text-white mx-3" style="font-size: 1.5rem; transition: color 0.3s;"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-3" style="font-size: 1.5rem; transition: color 0.3s;"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
